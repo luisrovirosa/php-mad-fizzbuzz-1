@@ -5,7 +5,7 @@ namespace PHPMad;
 class FizzBuzz
 {
 
-    public function bar($value)
+    public function fizzBuzzValue($value)
     {
         if ($value % 15 == 0) {
             return 'FizzBuzz';
@@ -22,8 +22,9 @@ class FizzBuzz
     {
         $array = [];
         for ($index = 0; $index < 100; $index++) {
-            $array[] = null;
+            $array[] = $this->fizzBuzzValue($index + 1);
         }
+
         return $array;
     }
 
