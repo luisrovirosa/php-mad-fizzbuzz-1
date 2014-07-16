@@ -2,7 +2,7 @@
 
 namespace PHPMad;
 
-class Foo
+class FizzBuzz
 {
 
     public function bar($value)
