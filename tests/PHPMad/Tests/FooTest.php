@@ -7,16 +7,21 @@ use PHPMad\Foo;
 class FooTest extends TestCase
 {
 
+    private $foo;
+
+    protected function setUp()
+    {
+        $this->foo = new Foo();
+    }
+
     public function testNormalNumbers()
     {
-        $foo = new Foo();
-        $this->assertEquals(1, $foo->bar(1));
+        $this->assertEquals(1, $this->foo->bar(1));
     }
 
     function testFizz()
     {
-        $foo = new Foo();
-        $this->assertEquals('Fizz', $foo->bar(3), "must be Fizz");
+        $this->assertEquals('Fizz', $this->foo->bar(3), "must be Fizz");
     }
 
 }
