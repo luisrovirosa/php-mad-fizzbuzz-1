@@ -18,4 +18,13 @@ class FizzBuzz
         return $value;
     }
 
+    public function fizzBuzz()
+    {
+        $array = [];
+        for ($index = 0; $index < 100; $index++) {
+            $array[] = null;
+        }
+        return $array;
+    }
+
 }

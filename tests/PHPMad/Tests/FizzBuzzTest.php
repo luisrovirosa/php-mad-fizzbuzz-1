@@ -34,4 +34,10 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals('FizzBuzz', $this->fizzBuzz->bar(15), "must be Fizz and Buzz because is multiple of 3 and 5");
     }
 
+    function testReturnsArrayOf100Values()
+    {
+        $this->assertInternalType('array', $this->fizzBuzz->fizzBuzz());
+        $this->assertCount(100, $this->fizzBuzz->fizzBuzz());
+    }
+
 }
