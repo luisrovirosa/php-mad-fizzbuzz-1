@@ -29,4 +29,9 @@ class FooTest extends TestCase
         $this->assertEquals('Buzz', $this->foo->bar(5), "must be Buzz because is multiple of 5");
     }
 
+    function testBuzzAndFizz()
+    {
+        $this->assertEquals('FizzBuzz', $this->foo->bar(15), "must be Fizz and Buzz because is multiple of 3 and 5");
+    }
+
 }
